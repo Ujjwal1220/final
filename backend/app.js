@@ -15,7 +15,7 @@ const _dirname = path.resolve();
 const PORT = process.env.PORT || 7777;
 app.use(
   cors({
-    origin: ["http://localhost:5173", "https://final-11-qia4.onrender.com"],
+    origin: "https://final-11-qia4.onrender.com",
     // Replace with the correct frontend URL for production
     credentials: true,
   })

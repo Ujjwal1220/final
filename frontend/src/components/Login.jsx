@@ -17,7 +17,7 @@ const Login = () => {
   const handlelogin = async () => {
     try {
       const res = await axios.post(
-        "http://localhost:7777/login",
+        "https://final-11-qia4.onrender.com/login",
         {
           Email,
           password,
@@ -38,7 +38,7 @@ const Login = () => {
   const handlesignup = async () => {
     try {
       const res = await axios.post(
-        "http://localhost:7777/signup",
+        "https://final-11-qia4.onrender.com/signup",
         {
           Email,
           FirstName,

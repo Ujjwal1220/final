@@ -276,7 +276,7 @@ const NavBar = () => {
   const handleLogout = async () => {
     try {
       await axios.post(
-        "http://localhost:7777/logout",
+        "https://final-11-qia4.onrender.com/logout",
         {},
         {
           withCredentials: true,

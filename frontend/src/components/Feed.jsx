@@ -430,9 +430,12 @@ const Feed = () => {
   const getFeed = async () => {
     setLoading(true);
     try {
-      const res = await axios.get("http://localhost:7777/showusercars", {
-        withCredentials: true,
-      });
+      const res = await axios.get(
+        "https://final-11-qia4.onrender.com/showusercars",
+        {
+          withCredentials: true,
+        }
+      );
 
       const data = Array.isArray(res?.data) ? res.data : [];
       dispatch(addFeed(data)); // Dispatch data if valid
@@ -456,7 +459,7 @@ const Feed = () => {
   const handleDeleteCar = async (carId) => {
     try {
       const res = await axios.delete(
-        `http://localhost:7777/deletecarinfo/${carId}`,
+        `https://final-11-qia4.onrender.com/deletecarinfo/${carId}`,
         { withCredentials: true }
       );
 

@@ -27,7 +27,7 @@ const Add = () => {
 
     try {
       const res = await axios.post(
-        "http://localhost:7777/savecarinfo",
+        "https://final-11-qia4.onrender.com/savecarinfo",
         {
           title,
           description,
@@ -99,7 +99,7 @@ const Add = () => {
 
     try {
       const res = await axios.patch(
-        `http://localhost:7777/updatecarinfo/${carId}`,
+        `https://final-11-qia4.onrender.com/updatecarinfo/${carId}`,
         {
           newImage: imageUrl.trim() ? imageUrl : undefined, // Send image only if URL is provided
           title, // Optional field: Send if title is updated
