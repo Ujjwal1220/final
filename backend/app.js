@@ -19,6 +19,7 @@ app.use(
     credentials: true,
   })
 );
+app.options("*", cors());
 
 app.use("/", authrouter);
 app.use("/", saverouter);
